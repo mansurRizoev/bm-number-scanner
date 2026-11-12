@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/bmPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/bmBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Назад"
+        android:src="@drawable/bm_scanner_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bmHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:shadowColor="#80000000"
+            android:shadowRadius="6"
+            android:text="Наведите камеру на номер"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/bmFrame"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:background="@drawable/bm_scanner_frame" />
+
+        <TextView
+            android:id="@+id/bmGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bm_scanner_button"
+            android:gravity="center"
+            android:minWidth="220dp"
+            android:paddingHorizontal="24dp"
+            android:text="Загрузить из галереи"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </LinearLayout>
+</FrameLayout>
