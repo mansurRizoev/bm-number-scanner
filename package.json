@@ -1,6 +1,6 @@
 {
   "name": "bm-number-scanner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Capacitor plugin: native camera screen that scans a number via OCR (ML Kit on Android, Vision on iOS).",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -27,7 +27,8 @@
   "keywords": [
     "capacitor",
     "plugin",
-    "ocr", "scanner"
+    "ocr",
+    "scanner"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
